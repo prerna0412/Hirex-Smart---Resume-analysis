@@ -1,109 +1,106 @@
+# HireX – AI Resume Analysis Platform
 
+##  Overview
 
-# Resume Analyzer
+HireX is an AI-powered resume analysis platform designed to streamline modern recruitment. The system uses Natural Language Processing (NLP) and Machine Learning techniques to evaluate resumes, calculate ATS compatibility scores, extract key skills, and provide intelligent improvement suggestions for candidates.
 
-**Resume Analyzer** is a prototype web application that allows users to upload multiple resumes and compare them against a job description using vectorization and cosine similarity. The project is built using Python, Flask, and scikit-learn. It can also be enhanced using machine learning models for better efficiency and accuracy — work on this is in progress.
-
----
-
-## Features
-
-- Supports multiple resume formats: `.pdf`, `.docx`, `.txt`
-- Uses TF-IDF vectorization and cosine similarity for scoring
-- Ranks resumes based on relevance to the provided job description
-- Allows users to upload and store resumes in a custom local path
-- HTML/CSS templates can be customized as per your needs
-- Can be deployed on the web using services like PythonAnywhere
+Built with a focus on real-world hiring workflows, HireX helps recruiters identify suitable candidates faster while helping applicants optimize their resumes for better job opportunities.
 
 ---
 
-## APP Interface
+##  Key Features
 
-![App Interface](https://github.com/SeekAI-786/Resume-Analyzer/blob/main/r2.png)
-
----
-
-![App Interface](https://github.com/SeekAI-786/Resume-Analyzer/blob/main/r1.png)
-
-
----
-## How It Works
-
-1. Users input a job description and upload up to 10 resumes.
-2. The application extracts text from all resumes:
-   - PDF: extracted using PyPDF2
-   - DOCX: extracted using docx2txt
-   - TXT: extracted via standard file read
-3. Text data is vectorized using `TfidfVectorizer` from scikit-learn.
-4. Cosine similarity is calculated between the job description and each resume.
-5. The top 3 matching resumes are displayed along with their similarity scores.
+*  Resume Upload & Parsing
+*  AI-Based Resume Analysis
+*  ATS Score Generation
+*  NLP Skill Extraction
+*  Smart Resume Improvement Suggestions
+*  Keyword Matching System
+*  Candidate Evaluation Dashboard
+*  Modern & Responsive UI
 
 ---
 
-## Running the App Locally
+##  Tech Stack
 
-### Requirements
+### Frontend
 
-- Python 3.7 or higher
-- Required Python packages (Check Requirements.txt)
+* HTML5
+* CSS3
+* JavaScript
 
-### Installation
+### Backend
 
-```bash
-git clone https://github.com/your-username/resume-analyzer.git
-cd resume-analyzer
-pip install -r requirements.txt
-```
+* Flask (Python)
 
-### Launch the Application
+### Database
 
-```bash
-python main.py
-```
+* MySQL
 
-Resume files will be stored in the `uploads/` directory. You can change this path in the `main.py` file as needed.
+### AI / ML
+
+* Natural Language Processing (NLP)
+* Machine Learning Algorithms
 
 ---
 
-## Deployment
+##  Problem Statement
 
-This app can be deployed to web platforms such as:
-
-- PythonAnywhere
-- Render
-- Railway
-- Heroku (with appropriate setup like a `Procfile`)
+Traditional resume screening is time-consuming and inefficient. HireX automates the resume evaluation process using AI to reduce manual effort, improve hiring accuracy, and enhance candidate-job matching.
 
 ---
 
-## Collaboration and Development
+##  Real-World Applications
 
-Work is ongoing to enhance the application using machine learning for smarter resume-job matching. Planned features include:
-
-- Deep learning-based similarity scoring
-- Better handling of resume formatting and structure
-- Filter options for specific qualifications, skills, or keywords
-- User accounts and dashboard
-
-Contributions are welcome. 
+* Recruitment Automation
+* HR Tech Platforms
+* ATS Optimization Tools
+* Resume Screening Systems
+* Talent Acquisition Solutions
 
 ---
 
-## Tech Stack
+##  Highlights
 
-- **Frontend**: HTML, CSS (with customization options)
-- **Backend**: Python Flask
-- **Text Processing**: TF-IDF, Cosine Similarity
-- **File Parsing**: PyPDF2, docx2txt
-
----
-
-## Notes
-
-This is a prototype and may not handle every edge case. It serves as a proof-of-concept for resume screening and ranking based on textual similarity. For production use, improvements in model robustness and user interface are recommended.
+* Designed with scalable architecture
+* Industry-focused project idea
+* Practical implementation of AI in recruitment
+* Combines ML + NLP with full-stack development
+* Clean and user-friendly interface
 
 ---
 
-## License
+##  Project Preview
 
-MIT License
+<img width="960" height="478" alt="Screenshot 2026-05-13 111854" src="https://github.com/user-attachments/assets/3ee8d904-3201-44e8-95a5-1043b6788740" />
+<img width="960" height="473" alt="Screenshot 2026-05-13 111937" src="https://github.com/user-attachments/assets/2a0af529-5acd-485a-aabc-a9c7b9d18a41" />
+<img width="960" height="475" alt="Screenshot 2026-05-13 112026" src="https://github.com/user-attachments/assets/a04b323e-bac4-47f5-bb8c-80eda41a5f4a" />
+<img width="960" height="476" alt="Screenshot 2026-05-13 112059" src="https://github.com/user-attachments/assets/a5c4f0d8-af4d-4e8c-b752-b83b3e611664" />
+<img width="960" height="480" alt="Screenshot 2026-05-13 112128" src="https://github.com/user-attachments/assets/20535715-0345-4bd5-af34-84512e8fb0c8" />
+<img width="960" height="473" alt="Screenshot 2026-05-13 112209" src="https://github.com/user-attachments/assets/aed58861-c469-490a-aa68-9a6c270babc0" />
+<img width="960" height="476" alt="Screenshot 2026-05-13 112240" src="https://github.com/user-attachments/assets/4982a4ff-8bda-4967-8517-2ba33a48900c" />
+<img width="960" height="476" alt="Screenshot 2026-05-13 112349" src="https://github.com/user-attachments/assets/6e010798-f41d-43e3-8cbc-9029644c7260" />
+<img width="960" height="468" alt="Screenshot 2026-05-13 112420" src="https://github.com/user-attachments/assets/8cbacb6f-c7d5-4f5d-a6bc-295303e3b6ec" />
+
+---
+
+##  Future Enhancements
+
+* AI Interview Assistant
+* Resume Ranking System
+* LinkedIn Profile Analysis
+* Multi-language Resume Support
+* Cloud Deployment
+* Real-time Recruiter Dashboard
+
+---
+
+##  Author
+
+Prerna Utage
+
+---
+
+##  Why HireX Stands Out
+
+HireX demonstrates practical implementation of Artificial Intelligence in HR technology by combining resume analytics, ATS optimization, and intelligent recommendation systems into a single platform. The project reflects strong skills in full-stack development, AI integration, problem-solving, and modern software design principles.
