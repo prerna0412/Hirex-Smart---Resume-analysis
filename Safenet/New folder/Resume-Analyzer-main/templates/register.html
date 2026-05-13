@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body{margin:0;height:100vh;display:flex;justify-content:center;align-items:center;background:#020617;color:white}
+.card{padding:30px;background:#0f172a;border-radius:15px}
+input{width:100%;padding:10px;margin:10px 0;background:#020617;border:none;color:white}
+button{width:100%;padding:10px;background:#22c55e;border:none;color:white}
+</style>
+</head>
+<body>
+
+<div class="card">
+<h2>Register</h2>
+
+<form method="POST">
+<input name="name" placeholder="Name">
+<input name="email" placeholder="Email">
+<input name="password" placeholder="Password">
+<button>Register</button>
+</form>
+
+{% if message %}
+<p style="color:green">{{message}}</p>
+{% endif %}
+
+</div>
+
+</body>
+</html>
